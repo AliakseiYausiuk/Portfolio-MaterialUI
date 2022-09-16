@@ -12,19 +12,24 @@ export const Navbar = () => {
     return (
         <section className={styles.navbar}>
             <NavLink to="/" className={styles.navbar__link}>
-                <img src={iconsHome} alt="icon Home"/>
+                <img className={styles.navbar__img} src={iconsHome} alt="icon Home"/>
+                <h3 className={styles.navbar__title}>Home</h3>
             </NavLink>
             <NavLink to="/aboutMe" className={styles.navbar__link}>
-                <img src={iconsUser} alt="icon user"/>
+                <img className={styles.navbar__img} src={iconsUser} alt="icon user"/>
+                <h3 className={styles.navbar__title}>About</h3>
             </NavLink>
             <NavLink to="/portfolio" className={styles.navbar__link}>
-                <img src={iconsPortfolio} alt="icon portfolio"/>
+                <img className={styles.navbar__img} src={iconsPortfolio} alt="icon portfolio"/>
+                <h3 className={styles.navbar__title}>Portfolio</h3>
             </NavLink>
             <NavLink to="/contact" className={styles.navbar__link}>
-                <img src={iconsContact} alt="icon contact"/>
+                <img className={styles.navbar__img} src={iconsContact} alt="icon contact"/>
+                <h3 className={styles.navbar__title}>Contacnt</h3>
             </NavLink>
             <NavLink to="/blog" className={styles.navbar__link}>
-                <img src={iconsBlog} alt="icon blog"/>
+                <img className={styles.navbar__img} src={iconsBlog} alt="icon blog"/>
+                <h3 className={styles.navbar__title}>Blog</h3>
             </NavLink>
         </section>
     )
