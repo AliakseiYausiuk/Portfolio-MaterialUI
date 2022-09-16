@@ -6,6 +6,8 @@ import {Button} from '../../btn/Button';
 import iconBtn from '../../../icons/icons8-sun.svg'
 import commonStyle from '../../../styles/common.module.scss';
 import {Title} from '../../title/Title';
+import {AboutMeCards} from './aboutMeCards/AboutMeCards';
+import {Skills} from './skills/Skills';
 
 
 export const AboutME = () => {
@@ -63,41 +65,9 @@ export const AboutME = () => {
                                 <span className={styles.aboutMe__list_light}>Russian, English</span>
                             </li>
                         </ul>
-                        <div className={styles.aboutMe__wrapperBlocks}>
-                            <div className={styles.aboutMe__block}>
-                                <span className={styles.aboutMe__number}>2+</span>
-                                <p className={styles.aboutMe__criteria}>
-                                    <span className={styles.aboutMe__dash}></span>
-                                    YEARS OF
-                                    EXPERIENCE
-                                </p>
-                            </div>
-                            <div className={styles.aboutMe__block}>
-                                <span className={styles.aboutMe__number}>19+</span>
-                                <p className={styles.aboutMe__criteria}>
-                                    <span className={styles.aboutMe__dash}></span>
-                                    COMPLETED
-                                    PROJECTS
-                                </p>
-                            </div>
-                            <div className={styles.aboutMe__block}>
-                                <span className={styles.aboutMe__number}>10+</span>
-                                <p className={styles.aboutMe__criteria}>
-                                    <span className={styles.aboutMe__dash}></span>
-                                    HAPPY
-                                    CUSTOMERS
-                                </p>
-                            </div>
-                            <div className={styles.aboutMe__block}>
-                                <span className={styles.aboutMe__number}>14+</span>
-                                <p className={styles.aboutMe__criteria}>
-                                    <span className={styles.aboutMe__dash}></span>
-                                    AWARDS
-                                    WON
-                                </p>
-                            </div>
-                        </div>
+                        <AboutMeCards/>
                     </div>
+                    <Skills/>
                     <Navbar/>
                 </div>
             </div>
