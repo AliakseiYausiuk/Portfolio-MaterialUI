@@ -1,0 +1,63 @@
+.skills {
+  width: 100%;
+
+}
+
+.skills__separator {
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+  opacity: .07;
+}
+
+.skills__title {
+  width: 120px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 25px;
+  padding: 0 0 48px 0;
+}
+
+.skills__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 48px 0;
+}
+
+.skills__progress {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ffb400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__percentages {
+  color: #fff;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.skills__text {
+  margin: 24px 0 0 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 25px;
+}
