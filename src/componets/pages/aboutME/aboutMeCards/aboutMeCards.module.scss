@@ -1,0 +1,39 @@
+.aboutMe__wrapperBlocks {
+  width: 600px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.aboutMe__block {
+  width: 265px;
+  height: 155px;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  padding: 20px 30px 25px 40px;
+  box-sizing: border-box;
+}
+
+.aboutMe__number {
+  font-size: 50px;
+  font-weight: 700;
+  color: #ffb400;
+  line-height: 1.2;
+}
+
+.aboutMe__criteria {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  //overflow-wrap: break-word;
+}
+
+.aboutMe__dash {
+  width: 30px;
+  background: #777;
+  height: 1px;
+  display: inline-block;
+  margin: 0 10px 5px 0;
+}
