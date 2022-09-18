@@ -1,0 +1,88 @@
+.contact {
+  box-sizing: border-box;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+.contact__list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact__lists {
+  color: #777777;
+  text-transform: uppercase;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.contact__listSubtitle {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+.contact__listSocialNetwork {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.contact__listsTitle {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 0 0 16px 0;
+}
+
+.contact__listsText {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  text-transform: none;
+
+}
+
+.contact__listsItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__img {
+  margin: 0 20px 0 0;
+}
+
+.contact__listsNetwork {
+  background: #2b2a2a;
+  border-radius: 50%;
+  height: 40px;
+  transition: .3s;
+  width: 40px;
+  margin: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__listsNetworkIcon {
+  width: 25px;
+  height: 25px;
+}
