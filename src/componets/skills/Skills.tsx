@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './skills.module.scss'
-import commonStyles from '../../../../styles/common.module.scss'
+import commonStyles from '../../styles/common.module.scss'
 
 export const Skills = () => {
     return (
@@ -11,7 +11,7 @@ export const Skills = () => {
                 <div className={styles.skills__wrapper}>
                     <div className={styles.skills__item}>
                         <div className={styles.skills__progress}>
-                            <p className={styles.skills__percentages}>50%</p>
+                            <p className={styles.skills__percentages}>70%</p>
                         </div>
                         <p className={styles.skills__text}>HTML</p>
                     </div>
@@ -29,7 +29,7 @@ export const Skills = () => {
                     </div>
                     <div className={styles.skills__item}>
                         <div className={styles.skills__progress}>
-                            <p className={styles.skills__percentages}>50%</p>
+                            <p className={styles.skills__percentages}>60%</p>
                         </div>
                         <p className={styles.skills__text}>REACT</p>
                     </div>
