@@ -6,8 +6,8 @@ import {Button} from '../../btn/Button';
 import iconBtn from '../../../icons/icons8-sun.svg'
 import commonStyle from '../../../styles/common.module.scss';
 import {Title} from '../../title/Title';
-import {AboutMeCards} from './aboutMeCards/AboutMeCards';
-import {Skills} from './skills/Skills';
+import {AboutMeCards} from '../../aboutMeCards/AboutMeCards';
+import {Skills} from '../../skills/Skills';
 
 
 export const AboutME = () => {
