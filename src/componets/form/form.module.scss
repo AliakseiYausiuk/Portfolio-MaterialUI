@@ -18,14 +18,18 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
-}
 
-.form__input:first-child {
-  margin: 0 65px 0 0;
-}
+  &:first-child {
+    margin: 0 65px 0 0;
+  }
 
-.form__input:nth-child(3) {
-  width: 100%;
+  &:nth-child(3) {
+    width: 100%;
+  }
+
+  &:hover {
+    border: 1px solid #ffb400;
+  }
 }
 
 
@@ -41,11 +45,8 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
-}
 
-.form__input:hover {
-  border: 1px solid #ffb400;
-}
-.form__textarea:hover {
-  border: 1px solid #ffb400;
+  &:hover {
+    border: 1px solid #ffb400;
+  }
 }

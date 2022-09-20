@@ -19,8 +19,8 @@
   transition: .3s;
   width: 50px;
   z-index: 99;
-}
 
-.changeThemeColorBnt:hover {
-  background-color: #ffb400;
+  &:hover {
+    background-color: #ffb400;
+  }
 }
