@@ -10,7 +10,7 @@ import iconsBlog from '../../icons/icons8-speech-bubble.svg'
 export const Navbar = () => {
 
     return (
-        <section className={styles.navbar}>
+        <nav className={styles.navbar}>
             <NavLink to="/" className={styles.navbar__link}>
                 <img className={styles.navbar__img} src={iconsHome} alt="icon Home"/>
                 <h3 className={styles.navbar__title}>Home</h3>
@@ -31,6 +31,6 @@ export const Navbar = () => {
                 <img className={styles.navbar__img} src={iconsBlog} alt="icon blog"/>
                 <h3 className={styles.navbar__title}>Blog</h3>
             </NavLink>
-        </section>
+        </nav>
     )
 }
