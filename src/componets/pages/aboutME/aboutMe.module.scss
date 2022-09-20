@@ -13,6 +13,10 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 990px) {
+    flex-wrap: wrap;
+  }
 }
 
 .aboutMe__titleInfos {
@@ -37,6 +41,10 @@
   font-weight: 500;
   line-height: 1.6;
   padding: 0 0 20px 0;
+
+  @media screen and (max-width: 990px) {
+    font-size: 15px;
+  }
 }
 
 .aboutMe__list_light {
@@ -45,5 +53,9 @@
   font-weight: 500;
   line-height: 1.6;
   padding: 0 0 0 5px;
+
+  @media screen and (max-width: 990px) {
+    font-size: 15px;
+  }
 }
 

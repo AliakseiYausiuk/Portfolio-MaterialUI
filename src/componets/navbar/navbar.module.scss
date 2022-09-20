@@ -5,6 +5,18 @@
   position: fixed;
   right: 30px;
   top: 250px;
+
+  @media screen and (max-width: 990px) {
+    flex-direction: row;
+    justify-content: space-around;
+    background: #2b2a2a;
+    padding: 8px;
+    z-index: 10;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
 .navbar__link {
@@ -20,6 +32,11 @@
   transition: .3s;
   width: 50px;
   justify-content: center;
+
+  @media screen and (max-width: 990px) {
+    margin: 0;
+    background: #444!important;
+  }
 }
 
 .navbar__title {
@@ -46,9 +63,11 @@
 
 .navbar__link:hover {
   background-color: #ffb400;
+
   .navbar__title {
     opacity: 1;
   }
+
   .navbar__img {
     z-index: 5;
     transition: .3s;
