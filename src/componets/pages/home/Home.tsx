@@ -5,6 +5,7 @@ import {Navbar} from '../../navbar/Navbar';
 import iconBtn from '../../../icons/icons8-sun.svg';
 import iconArrowBtn from '../../../icons/icons8-arrow-24.png'
 import {Button} from '../../btn/Button';
+import {Avatar} from '../../avatar/Avatar';
 
 export const Home = () => {
     return (
@@ -13,8 +14,7 @@ export const Home = () => {
             <div className={commonStyle.container}>
                 <div className={styles.home__item}>
                     <Button classNameBtn={commonStyle.changeThemeColorBnt} imgUrl={iconBtn} alt="icon button color theme"/>
-                    <img className={styles.home__img}
-                         src="https://tunis.ibthemespro.com/static/media/dark.fcd7feb934db7b81903a.jpg" alt='foto user'/>
+                    <Avatar src={"https://tunis.ibthemespro.com/static/media/dark.fcd7feb934db7b81903a.jpg"} alt={'foto user'}/>
                     <div className={styles.home__info}>
                         <h1 className={styles.home__title}>
                             <span className={styles.home__dash}/>
@@ -29,11 +29,15 @@ export const Home = () => {
                         </p>
                         <button className={styles.home__btn}>
                             more about me
-                            <img src={iconArrowBtn} className={styles.iconArrowBtn} alt="icon button arrow"/>
+                            <span className={styles.home__btnItem}>
+                                <img src={iconArrowBtn} className={styles.iconArrowBtn} alt="icon button arrow"/>
+                            </span>
+                            {/*<span className={styles.home__btnAnimation}/>*/}
                         </button>
                     </div>
-                    <Navbar/>
+
                 </div>
             </div>
+            <Navbar/>
         </section>)
 }

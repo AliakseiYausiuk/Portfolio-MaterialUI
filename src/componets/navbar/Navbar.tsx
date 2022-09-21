@@ -2,8 +2,8 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 import styles from './navbar.module.scss'
 import iconsHome from '../../icons/icons8-home.svg'
-import iconsUser from '../../icons/icons8-user-24 (1).png'
-import iconsPortfolio from '../../icons/icons8-briefcase-24.png'
+import iconsUser from '../../icons/icons8-user-24.png'
+import iconsPortfolio from '../../icons/icons8-briefcase.svg'
 import iconsContact from '../../icons/icons8-contact-24.png'
 import iconsBlog from '../../icons/icons8-speech-bubble.svg'
 

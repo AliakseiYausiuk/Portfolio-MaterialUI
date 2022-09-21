@@ -17,7 +17,6 @@ function App() {
             <Route path="/blog" element={<Blog/>}/>
         </Routes>
     </BrowserRouter>
-
 }
 
 export default App;

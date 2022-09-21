@@ -68,9 +68,10 @@ export const AboutME = () => {
                         <AboutMeCards/>
                     </div>
                     <Skills/>
-                    <Navbar/>
+
                 </div>
             </div>
+            <Navbar/>
         </section>
     )
 }

@@ -86,6 +86,7 @@ export const Contact = () => {
                     <Navbar/>
                 </div>
             </div>
+            <Navbar/>
         </section>
     )
 }

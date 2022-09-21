@@ -34,9 +34,9 @@ export const Portfolio = () => {
                             <img className={styles.portfolio__img} src={imgProjectTodolist} alt="images"/>
                         </div>
                     </div>
-                    <Navbar/>
                 </div>
             </div>
+            <Navbar/>
         </section>
     )
 }
