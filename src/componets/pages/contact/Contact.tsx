@@ -13,9 +13,12 @@ import iconTwitter from '../../../icons/icons8-twitter.svg';
 import iconYoutube from '../../../icons/icons8-youtube-logo.svg';
 import iconDribbble from '../../../icons/icons8-dribbble.svg';
 import {Form} from '../../form/Form';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../store';
 
 
 export const Contact = () => {
+    const state = useSelector((state: RootState) => state);
     return (
         <section className={styles.contact}>
             <div className={commonStyle.container}>
@@ -35,21 +38,21 @@ export const Contact = () => {
                                 <img className={styles.contact__img} src={iconMap} alt="icon map"/>
                                 <span className={styles.contact__listsItem}>
                                     address point
-                                <p className={styles.contact__listsText}>пр.Рокоссовского 49/165</p>
+                                <p className={styles.contact__listsText}>{state.user.street}</p>
                                 </span>
                             </li>
                             <li className={styles.contact__lists}>
                                 <img className={styles.contact__img} src={iconMail} alt="icon mail"/>
                                 <span className={styles.contact__listsItem}>
                                     mail me
-                                <p className={styles.contact__listsText}>Aliakseiyausiuk@gmail.com</p>
+                                <p className={styles.contact__listsText}>{state.user.email}</p>
                                 </span>
                             </li>
                             <li className={styles.contact__lists}>
                                 <img className={styles.contact__img} src={iconCall} alt="icon call"/>
                                 <span className={styles.contact__listsItem}>
                                     call me
-                                <p className={styles.contact__listsText}>+375259351665</p>
+                                <p className={styles.contact__listsText}>{state.user.phone}</p>
                                 </span>
                             </li>
                             <li className={styles.contact__lists}>
