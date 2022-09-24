@@ -4,6 +4,11 @@
   flex-wrap: wrap;
   margin: 0 0 0 60px;
   box-sizing: border-box;
+
+  @media screen and (max-width: 990px) {
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .form__input {
@@ -30,6 +35,15 @@
   &:hover {
     border: 1px solid #ffb400;
   }
+
+  @media screen and (max-width: 1225px){
+    width: 100%;
+    margin: 0 0 30px 0;
+    &:first-child {
+      margin: 0 0 30px 0;
+    }
+  }
+
 }
 
 

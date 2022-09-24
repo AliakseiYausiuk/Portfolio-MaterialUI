@@ -12,6 +12,10 @@
   display: flex;
   justify-content: center;
 
+  @media screen and (max-width: 990px) {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
 }
 
 .contact__list {
@@ -19,6 +23,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media screen and (max-width: 990px) {
+    margin: 0 0 30px;
+  }
 }
 
 .contact__lists {
@@ -80,6 +88,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: #ffb400;
+  }
 }
 
 .contact__listsNetworkIcon {
