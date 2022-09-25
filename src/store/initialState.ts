@@ -4,6 +4,7 @@ import imgProjectTravel from '../icons/Screenshot_2.png'
 import imgProjectMesto from '../icons/Screenshot_3.png'
 import imgProjectTodolist from '../icons/Screenshot_4.png'
 import imgProjectWD from '../icons/projectWD.png';
+import imgProjectGithubSearch from '../icons/githubSearch.png';
 
 
 export const initialState: user = {
@@ -35,5 +36,6 @@ export const initialState: user = {
         {id: v1(), link: 'https://aliakseiyausiuk.github.io/mesto-react/', img: imgProjectMesto},
         {id: v1(), link: 'https://aliakseiyausiuk.github.io/todoList__Material__UI/', img: imgProjectTodolist},
         {id: v1(), link: 'https://aliakseiyausiuk.github.io/WD/', img: imgProjectWD},
+        {id: v1(), link: 'https://aliakseiyausiuk.github.io/GitHub-profile/', img: imgProjectGithubSearch},
     ]
 }
