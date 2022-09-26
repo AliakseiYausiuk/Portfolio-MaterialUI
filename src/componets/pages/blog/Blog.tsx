@@ -6,14 +6,12 @@ import iconBtn from '../../../icons/icons8-sun.svg';
 import {Title} from '../../title/Title';
 import {Navbar} from '../../navbar/Navbar';
 import {BlogCard} from '../../blogCard/BlogCard';
-import {PopUp} from '../../popUp/PopUp';
 
 
 export const Blog = () => {
 
     return (
         <section className={styles.blog}>
-            <PopUp/>
             <div className={commonStyle.container}>
                 <div className={styles.blog__item}>
                     <Button classNameBtn={commonStyle.changeThemeColorBnt} imgUrl={iconBtn}
