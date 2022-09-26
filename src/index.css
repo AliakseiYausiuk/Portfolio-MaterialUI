@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #111;
 }
+.activeTheme {
+  background-color: #fff;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
