@@ -11,6 +11,7 @@
 .contact__wrapper {
   display: flex;
   justify-content: center;
+  margin: 40px 0 0 0;
 
   @media screen and (max-width: 990px) {
     flex-wrap: wrap;

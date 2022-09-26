@@ -14,6 +14,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  margin: 40px 0 0 0;
 
   @media screen and (max-width: 990px) {
     flex-wrap: wrap;
