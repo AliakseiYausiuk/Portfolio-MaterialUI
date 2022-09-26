@@ -16,9 +16,7 @@ export const Skills = () => {
                     {state.user.skills.map(el => {
                         return (
                             <div key={el.id} className={styles.skills__item}>
-                                <div className={styles.skills__progress}>
-                                    <p className={styles.skills__percentages}>{el.progress}</p>
-                                </div>
+                                <div className={styles.skills__progress}></div>
                                 <p className={styles.skills__text}>{el.skill}</p>
                             </div>
                         )
