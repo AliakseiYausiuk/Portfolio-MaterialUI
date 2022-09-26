@@ -19,7 +19,6 @@ export interface user {
 interface skills {
     id: string;
     skill: string;
-    progress: number;
 }
 
 interface project {
