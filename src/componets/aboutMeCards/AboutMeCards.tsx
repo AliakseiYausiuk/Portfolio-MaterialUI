@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './aboutMeCards.module.scss';
 
 export const AboutMeCards = () => {
+
     return (
         <div className={styles.aboutMe__wrapperBlocks}>
             <div className={styles.aboutMe__block}>

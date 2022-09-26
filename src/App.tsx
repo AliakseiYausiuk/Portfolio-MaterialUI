@@ -8,6 +8,7 @@ import {Blog} from './componets/pages/blog/Blog';
 
 
 function App() {
+
     return <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home/>}/>
