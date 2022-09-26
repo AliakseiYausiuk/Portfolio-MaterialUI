@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './porfolio.module.scss'
 import commonStyle from '../../../styles/common.module.scss';
 import {Title} from '../../title/Title';
@@ -7,12 +7,23 @@ import {Button} from '../../btn/Button';
 import iconBtn from '../../../icons/icons8-sun.svg';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../../store';
+import {PopUp} from '../../popUp/PopUp';
 
 
 export const Portfolio = () => {
     const state = useSelector((state: RootState) => state);
+    const [popup, setPopup] = useState(false);
+
+    const openPopup = () => {
+        setPopup(true)
+    };
+    const closePopup = () => {
+        setPopup(false);
+    };
+
     return (
         <section className={styles.portfolio}>
+            {popup && <PopUp closePopup={closePopup}/>}
             <div className={commonStyle.container}>
                 <div className={styles.portfolio__item}>
                     <Button classNameBtn={commonStyle.changeThemeColorBnt} imgUrl={iconBtn}
@@ -28,10 +39,8 @@ export const Portfolio = () => {
                     <div className={styles.portfolio__wrapper}>
                         {state.user.project.map(el => {
                             return (
-                                <div key={el.id} className={styles.portfolio__wrapperImg}>
-                                    <a href={el.link}>
-                                        <img className={styles.portfolio__img} src={el.img} alt="images"/>
-                                    </a>
+                                <div key={el.id} className={styles.portfolio__wrapperImg} onClick={openPopup}>
+                                    <img className={styles.portfolio__img} src={el.img} alt="images" />
                                 </div>
                             )
                         })}
