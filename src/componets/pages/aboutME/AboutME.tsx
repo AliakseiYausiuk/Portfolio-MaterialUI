@@ -1,27 +1,27 @@
-import React from 'react'
+import React, {useMemo} from 'react'
 import styles from './aboutMe.module.scss'
 import commonStyles from '../../../styles/common.module.scss'
 import {Navbar} from '../../navbar/Navbar';
-import {Button} from '../../btn/Button';
-import iconBtn from '../../../icons/icons8-sun.svg'
-import commonStyle from '../../../styles/common.module.scss';
+import {BtnColorTheme} from '../../btnColorTheme/btnColorTheme';
 import {Title} from '../../title/Title';
 import {AboutMeCards} from '../../aboutMeCards/AboutMeCards';
 import {Skills} from '../../skills/Skills';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../../store';
+import {Avatar} from '../../avatar/Avatar';
 
 
 export const AboutME = () => {
     const state = useSelector((state: RootState) => state);
+    const screenWidth = document.documentElement.scrollWidth;
 
     return (
         <section className={styles.aboutMe}>
             <div className={commonStyles.container}>
                 <div className={styles.aboutMe__item}>
-                    <Button classNameBtn={commonStyle.changeThemeColorBnt} imgUrl={iconBtn}
-                            alt="icon button color theme"/>
+                    <BtnColorTheme/>
                     <Title title='About' titleYellow='ME' subtitle='resume'/>
+                    {screenWidth < 990 && <Avatar src={state.user.avatar}/>}
                     <div className={styles.aboutMe__infos}>
                         <h3 className={styles.aboutMe__titleInfos}>PERSONAL INFOS</h3>
                         <ul className={styles.aboutMe__lists}>
