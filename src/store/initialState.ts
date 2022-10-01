@@ -32,10 +32,34 @@ export const initialState: user = {
         {id: v1(), skill: 'redux-toolkit'},
     ],
     project: [
-        {id: v1(), link: 'https://aliakseiyausiuk.github.io/russian-travel/index.html', img: imgProjectTravel},
-        {id: v1(), link: 'https://aliakseiyausiuk.github.io/mesto-react/', img: imgProjectMesto},
-        {id: v1(), link: 'https://aliakseiyausiuk.github.io/todoList__Material__UI/', img: imgProjectTodolist},
-        {id: v1(), link: 'https://aliakseiyausiuk.github.io/WD/', img: imgProjectWD},
-        {id: v1(), link: 'https://aliakseiyausiuk.github.io/GitHub-profile/', img: imgProjectGithubSearch},
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/russian-travel/index.html',
+            img: imgProjectTravel,
+            name: 'Russian Travel',
+            language: ' HTML, CSS'
+        },
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/mesto-react/',
+            img: imgProjectMesto,
+            name: 'Mesto',
+            language: ' React, JS, HTML, CSS'
+        },
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/todoList__Material__UI/',
+            img: imgProjectTodolist,
+            name: 'Todolist',
+            language: ' Typescript, React, HTML, Material-UI, Redux'
+        },
+        {id: v1(), link: 'https://aliakseiyausiuk.github.io/WD/', img: imgProjectWD, name: 'WD', language: ' HTML, CSS'},
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/GitHub-profile/',
+            img: imgProjectGithubSearch,
+            name: 'GitHub-profile',
+            language: ' React, Toolkit, TypeScript, Redux, Tailwind, RTKQuery'
+        },
     ]
 }
