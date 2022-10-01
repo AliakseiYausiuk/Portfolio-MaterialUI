@@ -1,0 +1,18 @@
+.card__img {
+  width: 440px;
+  height: 229px;
+  background-size: cover;
+  transition: transform 0.25s;
+
+  @media screen and (max-width: 490px) {
+    width: 320px;
+  }
+}
+
+.card__wrapperImg {
+  overflow: hidden;
+
+  &:hover .card__img {
+    transform: scale(1.1);
+  }
+}
