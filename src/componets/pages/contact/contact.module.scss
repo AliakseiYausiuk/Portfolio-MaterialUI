@@ -15,7 +15,7 @@
 
   @media screen and (max-width: 990px) {
     flex-wrap: wrap;
-    justify-content: normal;
+    justify-content: center;
   }
 }
 
@@ -27,6 +27,9 @@
 
   @media screen and (max-width: 990px) {
     margin: 0 0 30px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 300px;
   }
 }
 
