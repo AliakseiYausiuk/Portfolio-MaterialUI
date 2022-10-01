@@ -61,14 +61,6 @@
   display: flex;
 }
 
-.popUp__subtitle {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 500;
-  line-height: 1.6;
-  margin: 10px 0;
-}
-
 .popUp__icons {
   width: 25px;
   height: 25px;
@@ -77,6 +69,7 @@
 
 .popUp__img {
   width: 100%;
+  margin: 20px 0 0 0;
 }
 
 .popUp__text {
@@ -87,32 +80,4 @@
 .popUp__link {
   color: #ffb400;
   margin: 0 0 0 5px;
-}
-
-.popUp__item {
-  width: 100%;
-
-}
-
-.popUp__item_lists {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  gap: 0 20px;
-}
-
-.popUp__item__list {
-}
-
-.popUp__item_img {
-}
-
-.popUp__textNews {
-  font-size: 17px;
-  font-style: italic;
-  line-height: 1.6;
-  font-weight: 500;
-  color: #fff;
 }
