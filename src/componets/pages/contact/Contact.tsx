@@ -3,8 +3,7 @@ import styles from './contact.module.scss'
 import commonStyle from '../../../styles/common.module.scss';
 import {Title} from '../../title/Title';
 import {Navbar} from '../../navbar/Navbar';
-import {Button} from '../../btn/Button';
-import iconBtn from '../../../icons/icons8-sun.svg';
+import {BtnColorTheme} from '../../btnColorTheme/btnColorTheme';
 import iconMap from '../../../icons/icons8-map-50.png';
 import iconMail from '../../../icons/icons8-mail-50.png';
 import iconCall from '../../../icons/icons8-call-50.png';
@@ -23,8 +22,7 @@ export const Contact = () => {
         <section className={styles.contact}>
             <div className={commonStyle.container}>
                 <div className={styles.contact__item}>
-                    <Button classNameBtn={commonStyle.changeThemeColorBnt} imgUrl={iconBtn}
-                            alt="icon button color theme"/>
+                    <BtnColorTheme/>
                     <Title title="get in" titleYellow="touch" subtitle="Contact"/>
                     <div className={styles.contact__wrapper}>
                         <ul className={styles.contact__list}>
