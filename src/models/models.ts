@@ -16,13 +16,15 @@ export interface user {
     project: Array<project>
 }
 
-interface skills {
+export interface skills {
     id: string;
     skill: string;
 }
 
-interface project {
+export interface project {
     id: string;
     link: string;
     img: string;
+    name: string;
+    language: string
 }
