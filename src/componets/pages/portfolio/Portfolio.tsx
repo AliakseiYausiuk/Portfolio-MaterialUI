@@ -3,31 +3,20 @@ import styles from './porfolio.module.scss'
 import commonStyle from '../../../styles/common.module.scss';
 import {Title} from '../../title/Title';
 import {Navbar} from '../../navbar/Navbar';
-import {Button} from '../../btn/Button';
-import iconBtn from '../../../icons/icons8-sun.svg';
+import {BtnColorTheme} from '../../btnColorTheme/btnColorTheme';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../../store';
-import {PopUp} from '../../popUp/PopUp';
+import {Card} from '../../card/Card';
 
 
 export const Portfolio = () => {
     const state = useSelector((state: RootState) => state);
-    const [popup, setPopup] = useState(false);
-
-    const openPopup = () => {
-        setPopup(true)
-    };
-    const closePopup = () => {
-        setPopup(false);
-    };
 
     return (
         <section className={styles.portfolio}>
-            {popup && <PopUp closePopup={closePopup}/>}
             <div className={commonStyle.container}>
                 <div className={styles.portfolio__item}>
-                    <Button classNameBtn={commonStyle.changeThemeColorBnt} imgUrl={iconBtn}
-                            alt="icon button color theme"/>
+                    <BtnColorTheme/>
                     <Title title="MY" titleYellow="Portfolio" subtitle="Works"/>
                     <ul className={styles.portfolio__lists}>
                         <li className={styles.portfolio__list}>ALL</li>
@@ -38,11 +27,7 @@ export const Portfolio = () => {
                     </ul>
                     <div className={styles.portfolio__wrapper}>
                         {state.user.project.map(el => {
-                            return (
-                                <div key={el.id} className={styles.portfolio__wrapperImg} onClick={openPopup}>
-                                    <img className={styles.portfolio__img} src={el.img} alt="images" />
-                                </div>
-                            )
+                            return <Card key={el.id}  data={el}/>
                         })}
                     </div>
                 </div>
