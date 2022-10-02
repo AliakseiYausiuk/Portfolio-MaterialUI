@@ -14,6 +14,7 @@ export interface user {
     skills: Array<skills>;
     street: string
     project: Array<project>
+    blog: Array<myBlog>
 }
 
 export interface skills {
@@ -27,4 +28,12 @@ export interface project {
     img: string;
     name: string;
     language: string
+}
+
+export interface myBlog {
+    id: string
+    link: string
+    img: string
+    name: string
+    alt: string
 }
