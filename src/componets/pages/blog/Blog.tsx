@@ -5,9 +5,12 @@ import {BtnColorTheme} from '../../btnColorTheme/btnColorTheme';
 import {Title} from '../../title/Title';
 import {Navbar} from '../../navbar/Navbar';
 import {BlogCard} from '../../blogCard/BlogCard';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../store';
 
 
 export const Blog = () => {
+    const state = useSelector((state: RootState) => state);
 
     return (
         <section className={styles.blog}>
@@ -16,12 +19,9 @@ export const Blog = () => {
                     <BtnColorTheme/>
                     <Title title="MY" titleYellow="BLOG" subtitle="POSTS"/>
                     <div className={styles.blog__wrapper}>
-                        <BlogCard/>
-                        <BlogCard/>
-                        <BlogCard/>
-                        <BlogCard/>
-                        <BlogCard/>
-                        <BlogCard/>
+                        {state.user.blog.map(el => {
+                            return <BlogCard key={el.id} data={el}/>
+                        })}
                     </div>
                 </div>
             </div>
