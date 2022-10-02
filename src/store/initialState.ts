@@ -5,6 +5,14 @@ import imgProjectMesto from '../icons/Screenshot_3.png'
 import imgProjectTodolist from '../icons/Screenshot_4.png'
 import imgProjectWD from '../icons/projectWD.png';
 import imgProjectGithubSearch from '../icons/githubSearch.png';
+import imgReact from '../icons/320px-React.png';
+import imgRedux from '../icons/redux.jpg';
+import imgJest from '../icons/jest.png';
+import imgTypeScript from '../icons/typescript.svg';
+import imgDevdocs from '../icons/devdocs.png';
+import img30secondsofcode from '../icons/30secondsofcode.jpg';
+import imgRapidApi from '../icons/rapidapi.png';
+import imgRoadMap from '../icons/roadmap.png';
 
 
 export const initialState: user = {
@@ -53,7 +61,13 @@ export const initialState: user = {
             name: 'Todolist',
             language: ' Typescript, React, HTML, Material-UI, Redux'
         },
-        {id: v1(), link: 'https://aliakseiyausiuk.github.io/WD/', img: imgProjectWD, name: 'WD', language: ' HTML, CSS'},
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/WD/',
+            img: imgProjectWD,
+            name: 'WD',
+            language: ' HTML, CSS'
+        },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/GitHub-profile/',
@@ -61,5 +75,33 @@ export const initialState: user = {
             name: 'GitHub-profile',
             language: ' React, Toolkit, TypeScript, Redux, Tailwind, RTKQuery'
         },
+    ],
+    blog: [
+        {id: v1(), link: 'https://ru.reactjs.org', img: imgReact, name: 'React', alt: 'image React'},
+        {id: v1(), link: 'https://redux-toolkit.js.org', img: imgRedux, name: 'Redux', alt: 'image Redux'},
+        {id: v1(), link: 'https://jestjs.io/ru', img: imgJest, name: 'Jest', alt: 'image Jest'},
+        {
+            id: v1(),
+            link: 'https://www.typescriptlang.org',
+            img: imgTypeScript,
+            name: 'TypeScript',
+            alt: 'image TypeScript'
+        },
+        {id: v1(), link: 'https://devdocs.io', img: imgDevdocs, name: 'DevDocs', alt: 'image DevDocs'},
+        {
+            id: v1(),
+            link: 'https://www.30secondsofcode.org',
+            img: img30secondsofcode,
+            name: '30secondsofcode',
+            alt: 'image 30secondsofcode'
+        },
+        {
+            id: v1(),
+            link: 'https://rapidapi.com/collection/list-of-free-apis',
+            img: imgRapidApi,
+            name: 'RapidApi',
+            alt: 'image RapidApi'
+        },
+        {id: v1(), link: 'https://roadmap.sh', img: imgRoadMap, name: 'RoadMap', alt: 'image RoadMap'},
     ]
 }
