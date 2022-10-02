@@ -1,17 +1,19 @@
 import React from 'react';
 import styles from './blogCard.module.scss'
-import img from '../../icons/whybuildemaillist.png'
+import {myBlog} from '../../models/models';
 
-export const BlogCard = () => {
+
+type blogCardType = {
+    data: myBlog
+}
+
+export const BlogCard = ({data}: blogCardType) => {
     return (
-        <div className={styles.card}>
-            <img className={styles.card__img} src={img} alt="image"/>
+        <a href={data.link} className={styles.card}>
+            <img className={styles.card__img} src={data.img} alt={data.alt}/>
             <h3 className={styles.card__title}>
-                How to Own Your Audience by Creating an Email List
+                {data.name}
             </h3>
-            <p className={styles.card__text}>
-                Tomfoolery crikey bits and bobs brilliant bamboozled down the pub amongst brolly hanky panky, cack b
-            </p>
-        </div>
+        </a>
     )
 }
