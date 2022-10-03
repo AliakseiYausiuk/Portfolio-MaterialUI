@@ -13,8 +13,7 @@ type popupType = {
     data: project
 }
 
-export const PopUp = ({closePopup, data}: popupType) => {
-
+export const PopUp = React.memo(({closePopup, data}: popupType) => {
     return (
         <div className={styles.popUp__blackout} onClick={closePopup}>
             <div id={'popup'} className={styles.popUp}>
@@ -44,4 +43,4 @@ export const PopUp = ({closePopup, data}: popupType) => {
             </div>
         </div>
     )
-}
+})

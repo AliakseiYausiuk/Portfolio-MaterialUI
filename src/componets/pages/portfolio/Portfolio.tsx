@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useMemo} from 'react';
 import styles from './porfolio.module.scss'
 import commonStyle from '../../../styles/common.module.scss';
 import {Title} from '../../title/Title';
@@ -9,9 +9,13 @@ import {RootState} from '../../../store';
 import {Card} from '../../card/Card';
 
 
-export const Portfolio = () => {
+export const Portfolio = React.memo(() => {
     const state = useSelector((state: RootState) => state);
-
+    const isProject = useMemo(() => {
+        return state.user.project.map(el => {
+            return <Card key={el.id} data={el}/>
+        })
+    }, [state.user.project])
     return (
         <section className={styles.portfolio}>
             <div className={commonStyle.container}>
@@ -26,13 +30,11 @@ export const Portfolio = () => {
                         <li className={styles.portfolio__list}>MOCKUP</li>
                     </ul>
                     <div className={styles.portfolio__wrapper}>
-                        {state.user.project.map(el => {
-                            return <Card key={el.id}  data={el}/>
-                        })}
+                        {isProject}
                     </div>
                 </div>
             </div>
             <Navbar/>
         </section>
     )
-}
+})

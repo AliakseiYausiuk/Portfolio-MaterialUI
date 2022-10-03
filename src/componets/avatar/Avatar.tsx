@@ -7,9 +7,9 @@ type avatartype = {
     className?: string
 }
 
-export const Avatar = ({src, alt, className}: avatartype) => {
+export const Avatar = React.memo(({src, alt, className}: avatartype) => {
     return (
         <img className={`${styles.img} ${className}`}
              src={src} alt={alt}/>
     )
-}
+})

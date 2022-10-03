@@ -7,7 +7,7 @@ type cardType = {
     data: project
 }
 
-export const Card = ({data}: cardType) => {
+export const Card = React.memo(({data}: cardType) => {
     const [popup, setPopup] = useState(false);
 
     const openPopup = () => {
@@ -21,8 +21,8 @@ export const Card = ({data}: cardType) => {
         <>
             {popup && <PopUp closePopup={closePopup} data={data}/>}
             <div className={styles.card__wrapperImg} onClick={openPopup}>
-                <img className={styles.card__img} src={data.img} alt="images" />
+                <img className={styles.card__img} src={data.img} alt="images"/>
             </div>
         </>
     )
-}
+})

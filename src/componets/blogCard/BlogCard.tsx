@@ -7,7 +7,7 @@ type blogCardType = {
     data: myBlog
 }
 
-export const BlogCard = ({data}: blogCardType) => {
+export const BlogCard = React.memo(({data}: blogCardType) => {
     return (
         <a href={data.link} className={styles.card}>
             <img className={styles.card__img} src={data.img} alt={data.alt}/>
@@ -16,4 +16,4 @@ export const BlogCard = ({data}: blogCardType) => {
             </h3>
         </a>
     )
-}
+})
