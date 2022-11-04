@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Portfolio-React/static/css/main.40e5602f.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.db20ad3f.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.db20ad3f.chunk.js.map",
+    "runtime-main.js": "/Portfolio-React/static/js/runtime-main.c362e522.js",
+    "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.c362e522.js.map",
+    "static/js/2.4aacc15c.chunk.js": "/Portfolio-React/static/js/2.4aacc15c.chunk.js",
+    "static/js/2.4aacc15c.chunk.js.map": "/Portfolio-React/static/js/2.4aacc15c.chunk.js.map",
+    "index.html": "/Portfolio-React/index.html",
+    "static/css/main.40e5602f.chunk.css.map": "/Portfolio-React/static/css/main.40e5602f.chunk.css.map",
+    "static/js/2.4aacc15c.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.4aacc15c.chunk.js.LICENSE.txt",
+    "static/media/Screenshot_2.6ea0dbef.png": "/Portfolio-React/static/media/Screenshot_2.6ea0dbef.png",
+    "static/media/Screenshot_3.ccb004ff.png": "/Portfolio-React/static/media/Screenshot_3.ccb004ff.png",
+    "static/media/Screenshot_4.efcf0df3.png": "/Portfolio-React/static/media/Screenshot_4.efcf0df3.png",
+    "static/media/githubSearch.414a813d.png": "/Portfolio-React/static/media/githubSearch.414a813d.png",
+    "static/media/icons8-briefcase.54e19a19.svg": "/Portfolio-React/static/media/icons8-briefcase.54e19a19.svg",
+    "static/media/icons8-dribbble.78296b87.svg": "/Portfolio-React/static/media/icons8-dribbble.78296b87.svg",
+    "static/media/icons8-facebook-f.a0eba021.svg": "/Portfolio-React/static/media/icons8-facebook-f.a0eba021.svg",
+    "static/media/icons8-home.290c834e.svg": "/Portfolio-React/static/media/icons8-home.290c834e.svg",
+    "static/media/icons8-speech-bubble.205e7394.svg": "/Portfolio-React/static/media/icons8-speech-bubble.205e7394.svg",
+    "static/media/icons8-sun.2433786e.svg": "/Portfolio-React/static/media/icons8-sun.2433786e.svg",
+    "static/media/icons8-twitter.e7daba4a.svg": "/Portfolio-React/static/media/icons8-twitter.e7daba4a.svg",
+    "static/media/icons8-youtube-logo.c33c126a.svg": "/Portfolio-React/static/media/icons8-youtube-logo.c33c126a.svg",
+    "static/media/jest.c4809212.png": "/Portfolio-React/static/media/jest.c4809212.png",
+    "static/media/projectWD.6e0dcee9.png": "/Portfolio-React/static/media/projectWD.6e0dcee9.png",
+    "static/media/redux.63cbd8b0.jpg": "/Portfolio-React/static/media/redux.63cbd8b0.jpg",
+    "static/media/roadmap.fc1b24ed.png": "/Portfolio-React/static/media/roadmap.fc1b24ed.png",
+    "static/media/typescript.7c2e5f59.svg": "/Portfolio-React/static/media/typescript.7c2e5f59.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c362e522.js",
+    "static/js/2.4aacc15c.chunk.js",
+    "static/css/main.40e5602f.chunk.css",
+    "static/js/main.db20ad3f.chunk.js"
+  ]
+}
