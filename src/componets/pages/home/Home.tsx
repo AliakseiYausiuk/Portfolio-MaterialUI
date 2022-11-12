@@ -11,9 +11,6 @@ import {RootState} from '../../../store';
 
 export const Home = () => {
     const state = useSelector((state: RootState) => state);
-
-
-
     return (
         <section className={styles.home}>
             <div className={styles.colorBlock}></div>
