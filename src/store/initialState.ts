@@ -13,6 +13,7 @@ import imgDevdocs from '../icons/devdocs.png';
 import img30secondsofcode from '../icons/30secondsofcode.jpg';
 import imgRapidApi from '../icons/rapidapi.png';
 import imgRoadMap from '../icons/roadmap.png';
+import imgHomeworkIncubator from '../icons/homework-inceubator.png'
 
 
 export const initialState: user = {
@@ -74,6 +75,13 @@ export const initialState: user = {
             img: imgProjectGithubSearch,
             name: 'GitHub-profile',
             language: ' React, Toolkit, TypeScript, Redux, Tailwind, RTKQuery'
+        },
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/homework-incubator/#/pre-junior',
+            img: imgHomeworkIncubator,
+            name: 'Homework-incubator',
+            language: ' React, TypeScript, Redux, Material-UI'
         },
     ],
     blog: [
