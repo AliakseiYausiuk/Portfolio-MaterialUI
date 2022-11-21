@@ -1,3 +1,5 @@
+@import "../../../styles/default_variables.module";
+
 .colorBlock {
   height: 200%;
   left: -83%;
@@ -5,7 +7,7 @@
   top: -50%;
   transform: rotate(-15deg);
   width: 100%;
-  background-color: #ffb400;
+  background-color: $yellow-main;
 
   @media screen and (max-width: 990px) {
     display: none;
@@ -17,6 +19,7 @@
   height: 100vh;
   box-sizing: border-box;
   position: relative;
+
 }
 
 .home__item {
@@ -50,7 +53,7 @@
   font-size: 51px;
   font-weight: 700;
   line-height: 62px;
-  color: #ffb400;
+  color: $yellow-main;
   margin: 0;
   text-align: center;
 
@@ -71,7 +74,7 @@
   display: inline-block;
   width: 40px;
   height: 4px;
-  background-color: #ffb400;
+  background-color: $yellow-main;
   margin: 0 15px 15px 0;
 
   @media screen and (max-width: 990px) {
@@ -102,10 +105,10 @@
 
 .home__btn {
   margin: 20px 0 0 0;
-  border: 1px solid #ffb400;
+  border: 1px solid $yellow-main;
   background-color: transparent;
   border-radius: 35px;
-  color: #fff;
+  color: $white-main;
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
@@ -146,7 +149,7 @@
   align-items: center;
   border-radius: 50%;
   bottom: 0;
-  color: #fff;
+  color: $white-main;
   display: flex;
   font-size: 19px;
   height: 55px;
@@ -155,5 +158,5 @@
   right: -1px;
   top: -1px;
   width: 55px;
-  background-color: #ffb400;
+  background-color: $yellow-main;
 }
