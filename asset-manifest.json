@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio-React/static/css/main.40e5602f.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.f16e06fc.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.f16e06fc.chunk.js.map",
+    "main.css": "/Portfolio-React/static/css/main.25aba50f.chunk.css",
+    "main.js": "/Portfolio-React/static/js/main.e44fdebc.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.e44fdebc.chunk.js.map",
     "runtime-main.js": "/Portfolio-React/static/js/runtime-main.c362e522.js",
     "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.c362e522.js.map",
     "static/js/2.a3f7ceea.chunk.js": "/Portfolio-React/static/js/2.a3f7ceea.chunk.js",
     "static/js/2.a3f7ceea.chunk.js.map": "/Portfolio-React/static/js/2.a3f7ceea.chunk.js.map",
     "index.html": "/Portfolio-React/index.html",
-    "static/css/main.40e5602f.chunk.css.map": "/Portfolio-React/static/css/main.40e5602f.chunk.css.map",
+    "static/css/main.25aba50f.chunk.css.map": "/Portfolio-React/static/css/main.25aba50f.chunk.css.map",
     "static/js/2.a3f7ceea.chunk.js.LICENSE.txt": "/Portfolio-React/static/js/2.a3f7ceea.chunk.js.LICENSE.txt",
     "static/media/Screenshot_2.6ea0dbef.png": "/Portfolio-React/static/media/Screenshot_2.6ea0dbef.png",
     "static/media/Screenshot_3.ccb004ff.png": "/Portfolio-React/static/media/Screenshot_3.ccb004ff.png",
     "static/media/Screenshot_4.efcf0df3.png": "/Portfolio-React/static/media/Screenshot_4.efcf0df3.png",
     "static/media/githubSearch.414a813d.png": "/Portfolio-React/static/media/githubSearch.414a813d.png",
+    "static/media/homework-inceubator.493105b8.png": "/Portfolio-React/static/media/homework-inceubator.493105b8.png",
     "static/media/icons8-briefcase.54e19a19.svg": "/Portfolio-React/static/media/icons8-briefcase.54e19a19.svg",
     "static/media/icons8-dribbble.78296b87.svg": "/Portfolio-React/static/media/icons8-dribbble.78296b87.svg",
     "static/media/icons8-facebook-f.a0eba021.svg": "/Portfolio-React/static/media/icons8-facebook-f.a0eba021.svg",
@@ -31,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.c362e522.js",
     "static/js/2.a3f7ceea.chunk.js",
-    "static/css/main.40e5602f.chunk.css",
-    "static/js/main.f16e06fc.chunk.js"
+    "static/css/main.25aba50f.chunk.css",
+    "static/js/main.e44fdebc.chunk.js"
   ]
 }
