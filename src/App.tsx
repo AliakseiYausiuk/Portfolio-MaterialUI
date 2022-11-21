@@ -8,7 +8,6 @@ import {Blog} from './componets/pages/blog/Blog';
 
 
 function App() {
-
     return <HashRouter>
         <Routes>
             <Route path="/" element={<Home/>}/>
