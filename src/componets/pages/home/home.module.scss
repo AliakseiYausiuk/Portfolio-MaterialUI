@@ -83,14 +83,11 @@
 }
 
 .home__titleLight {
-  color: #fff;
   display: block;
   text-align: center;
-
 }
 
 .home__subtitle {
-  color: #fff;
   text-align: center;
 
   @media screen and (max-width: 990px) {
@@ -108,7 +105,7 @@
   border: 1px solid $yellow-main;
   background-color: transparent;
   border-radius: 35px;
-  color: $white-main;
+  color: inherit;
   cursor: pointer;
   font-size: 15px;
   font-weight: 600;
@@ -127,19 +124,6 @@
 
 }
 
-//.home__btn:hover:before {
-//  background-color: #ffb400;
-//  bottom: 0;
-//  content: "";
-//  left: 0;
-//  position: absolute;
-//  right: 150px;
-//  top: 0;
-//  -webkit-transform: translateX(100%);
-//  transform: translateX(100%);
-//  transition: all .3s ease-out;
-//  z-index: 100;
-//}
 
 .iconArrowBtn {
   box-sizing: border-box;

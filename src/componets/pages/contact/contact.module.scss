@@ -1,3 +1,5 @@
+@import '../../../styles/default_variables.module';
+
 .contact {
   box-sizing: border-box;
 }
@@ -34,14 +36,13 @@
 }
 
 .contact__lists {
-  color: #777777;
+  color: $grey-main;
   text-transform: uppercase;
   display: flex;
   margin: 0 0 20px 0;
 }
 
 .contact__listSubtitle {
-  color: #fff;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.6;
@@ -56,7 +57,6 @@
 }
 
 .contact__listsTitle {
-  color: #fff;
   font-size: 25px;
   font-weight: 500;
   line-height: 1.6;
@@ -64,13 +64,11 @@
 }
 
 .contact__listsText {
-  color: #fff;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.6;
   margin: 0;
   text-transform: none;
-
 }
 
 .contact__listsItem {
@@ -90,11 +88,11 @@
   width: 40px;
   margin: 0 6px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   &:hover {
-    background-color: #ffb400;
+    background-color: $yellow-main;
   }
 }
 

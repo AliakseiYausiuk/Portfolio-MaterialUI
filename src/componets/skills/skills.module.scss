@@ -1,6 +1,7 @@
+@import '../../styles/default_variables.module';
+
 .skills {
   width: 100%;
-
 }
 
 .skills__separator {
@@ -13,11 +14,11 @@
 .skills__title {
   width: 120px;
   margin: 0 auto;
-  color: #ffffff;
   font-weight: 600;
   line-height: 1.2;
   font-size: 25px;
   padding: 0 0 48px 0;
+  text-align: center;
 }
 
 .skills__wrapper {
@@ -45,17 +46,8 @@
   align-items: center;
 }
 
-.skills__percentages {
-  color: #fff;
-  margin: 0;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
 .skills__text {
   margin: 24px 0 0 0;
-  color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.2;

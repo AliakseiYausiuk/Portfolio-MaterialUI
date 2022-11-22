@@ -1,3 +1,4 @@
+@import '../../../styles/default_variables.module';
 .aboutMe {
   box-sizing: border-box;
 }
@@ -23,7 +24,6 @@
 
 .aboutMe__titleInfos {
   position: absolute;
-  color: #fff;
   font-size: 25px;
   font-weight: 500;
   line-height: 1.6;
@@ -38,7 +38,7 @@
 }
 
 .aboutMe__list {
-  color: #777;
+  color: $grey-main;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
@@ -50,7 +50,7 @@
 }
 
 .aboutMe__list_light {
-  color: #fff;
+  color: $white-main;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.6;
