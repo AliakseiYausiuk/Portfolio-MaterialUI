@@ -7,7 +7,7 @@ type TitleType = {
     subtitle?: string
 }
 
-export const Title = React.memo(({title, titleYellow, subtitle}:TitleType) => {
+export const Title = React.memo(({title, titleYellow, subtitle}: TitleType) => {
     return (
         <div className={styles.title__wrapper}>
             <h1 className={styles.title}>
