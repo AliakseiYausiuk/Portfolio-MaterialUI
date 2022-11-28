@@ -14,10 +14,11 @@ import img30secondsofcode from '../icons/30secondsofcode.jpg';
 import imgRapidApi from '../icons/rapidapi.png';
 import imgRoadMap from '../icons/roadmap.png';
 import imgHomeworkIncubator from '../icons/homework-inceubator.png'
+import imgIm from '../icons/IM.jpg'
 
 
 export const initialState: user = {
-    avatar: 'https://tunis.ibthemespro.com/static/media/dark.fcd7feb934db7b81903a.jpg',
+    avatar: imgIm,
     firstName: 'Aliaksei',
     lastName: 'Yausiuk',
     age: 25,
