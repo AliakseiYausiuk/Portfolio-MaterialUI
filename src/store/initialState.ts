@@ -15,6 +15,7 @@ import imgRapidApi from '../icons/rapidapi.png';
 import imgRoadMap from '../icons/roadmap.png';
 import imgHomeworkIncubator from '../icons/homework-inceubator.png'
 import imgIm from '../icons/IM.jpg'
+import imgForm from '../icons/form.png'
 
 
 export const initialState: user = {
@@ -83,6 +84,13 @@ export const initialState: user = {
             img: imgHomeworkIncubator,
             name: 'Homework-incubator',
             language: ' React, TypeScript, Redux, Material-UI'
+        },
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/Form/',
+            img: imgForm,
+            name: 'Form',
+            language: ' React, TypeScript, Material-UI, React-hook-form'
         },
     ],
     blog: [
