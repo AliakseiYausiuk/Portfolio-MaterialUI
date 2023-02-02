@@ -6,31 +6,31 @@ import iconsUser from '../../icons/icons8-user-24.png'
 import iconsPortfolio from '../../icons/icons8-briefcase.svg'
 import iconsContact from '../../icons/icons8-contact-24.png'
 import iconsBlog from '../../icons/icons8-speech-bubble.svg'
+import {PATH} from '../../App';
+import { v1 } from 'uuid';
+import {DataNav} from '../../models/models';
+
+
+
 
 export const Navbar = () => {
 
+    const dataNav: Array<DataNav> = [
+        {id:v1(), img: iconsHome, alt: "icon Home", text: 'Home',path:PATH.HOME},
+        {id:v1(), img: iconsUser, alt: "icon user", text: 'About',path:PATH.ABOUTME},
+        {id:v1(), img: iconsPortfolio, alt: "icon portfolio", text: 'Portfolio',path:PATH.PORTFOLIO},
+        {id:v1(), img: iconsContact, alt: "icon contact", text: 'Contacnt',path:PATH.CONTACT},
+        {id:v1(), img: iconsBlog, alt: "icon blog", text: 'Blog',path:PATH.BLOG},
+    ]
+
     return (
         <nav className={styles.navbar}>
-            <NavLink to="/" className={styles.navbar__link}>
-                <img className={styles.navbar__img} src={iconsHome} alt="icon Home"/>
-                <h3 className={styles.navbar__title}>Home</h3>
-            </NavLink>
-            <NavLink to="/aboutMe" className={styles.navbar__link}>
-                <img className={styles.navbar__img} src={iconsUser} alt="icon user"/>
-                <h3 className={styles.navbar__title}>About</h3>
-            </NavLink>
-            <NavLink to="/portfolio" className={styles.navbar__link}>
-                <img className={styles.navbar__img} src={iconsPortfolio} alt="icon portfolio"/>
-                <h3 className={styles.navbar__title}>Portfolio</h3>
-            </NavLink>
-            <NavLink to="/contact" className={styles.navbar__link}>
-                <img className={styles.navbar__img} src={iconsContact} alt="icon contact"/>
-                <h3 className={styles.navbar__title}>Contacnt</h3>
-            </NavLink>
-            <NavLink to="/blog" className={styles.navbar__link}>
-                <img className={styles.navbar__img} src={iconsBlog} alt="icon blog"/>
-                <h3 className={styles.navbar__title}>Blog</h3>
-            </NavLink>
+            {dataNav.map((el:DataNav) => {
+                return <NavLink to={el.path} className={styles.navbar__link} key={el.id}>
+                    <img className={styles.navbar__img} src={el.img} alt={el.alt}/>
+                    <h3 className={styles.navbar__title}>{el.text}</h3>
+                </NavLink>
+            })}
         </nav>
     )
 }
