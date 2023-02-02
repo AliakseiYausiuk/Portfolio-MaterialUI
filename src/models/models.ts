@@ -37,3 +37,11 @@ export interface myBlog {
     name: string
     alt: string
 }
+
+export interface DataNav {
+    id: string
+    img: string
+    alt: string
+    text: string
+    path: string
+}
