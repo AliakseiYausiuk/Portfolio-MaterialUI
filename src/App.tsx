@@ -6,15 +6,22 @@ import {Portfolio} from './componets/pages/portfolio/Portfolio'
 import {Contact} from './componets/pages/contact/Contact';
 import {Blog} from './componets/pages/blog/Blog';
 
+export const PATH = {
+    HOME: '/',
+    ABOUTME: '/aboutMe',
+    PORTFOLIO: '/portfolio',
+    CONTACT: '/contact',
+    BLOG: '/blog'
+}
 
 function App() {
     return <HashRouter>
         <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/aboutMe" element={<AboutME/>}/>
-            <Route path="/portfolio" element={<Portfolio/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/blog" element={<Blog/>}/>
+            <Route path={PATH.HOME} element={<Home/>}/>
+            <Route path={PATH.ABOUTME} element={<AboutME/>}/>
+            <Route path={PATH.PORTFOLIO} element={<Portfolio/>}/>
+            <Route path={PATH.CONTACT} element={<Contact/>}/>
+            <Route path={PATH.BLOG} element={<Blog/>}/>
         </Routes>
     </HashRouter>
 }
