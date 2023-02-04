@@ -9,11 +9,16 @@ import {RootState} from '../../../store';
 import {Card} from '../../card/Card';
 
 
+
+
 export const Portfolio = React.memo(() => {
+
+
+
     const state = useSelector((state: RootState) => state);
     const isProject = useMemo(() => {
-        return state.user.project.map(el => {
-            return <Card key={el.id} data={el}/>
+        return state.user.project.map((el, i) => {
+            return <Card data={el} index={i}/>
         })
     }, [state.user.project])
     return (
