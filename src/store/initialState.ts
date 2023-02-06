@@ -48,49 +48,56 @@ export const initialState: user = {
             link: 'https://aliakseiyausiuk.github.io/russian-travel/index.html',
             img: imgProjectTravel,
             name: 'Russian Travel',
-            language: ' HTML, CSS'
+            language: 'HTML, CSS',
+            filter: 'high',
         },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/mesto-react/',
             img: imgProjectMesto,
             name: 'Mesto',
-            language: ' React, JS, HTML, CSS'
+            language: 'React, HTML, JS, CSS',
+            filter: 'low',
         },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/todoList__Material__UI/',
             img: imgProjectTodolist,
             name: 'Todolist',
-            language: ' Typescript, React, HTML, Material-UI, Redux'
+            language: 'Typescript, React, HTML, Material-UI, Redux',
+            filter: 'low',
         },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/WD/',
             img: imgProjectWD,
             name: 'WD',
-            language: ' HTML, CSS'
+            language: 'HTML, CSS',
+            filter: 'high',
         },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/GitHub-profile/',
             img: imgProjectGithubSearch,
             name: 'GitHub-profile',
-            language: ' React, Toolkit, TypeScript, Redux, Tailwind, RTKQuery'
+            language: 'React, Toolkit, TypeScript, Redux, Tailwind, RTKQuery',
+            filter: 'low',
         },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/homework-incubator/#/pre-junior',
             img: imgHomeworkIncubator,
             name: 'Homework-incubator',
-            language: ' React, TypeScript, Redux, Material-UI'
+            language: 'React, TypeScript, Redux, Material-UI',
+            filter: 'low',
         },
         {
             id: v1(),
             link: 'https://aliakseiyausiuk.github.io/Form/',
             img: imgForm,
             name: 'Form',
-            language: ' React, TypeScript, Material-UI, React-hook-form'
+            language: 'React, TypeScript, Material-UI, React-hook-form',
+            filter: 'low',
         },
     ],
     blog: [
