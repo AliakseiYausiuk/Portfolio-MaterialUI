@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styles from './card.module.scss'
-import {project} from '../../models/models';
+import {Project} from '../../models/models';
 import {PopUp} from '../popUp/PopUp';
 // @ts-ignore
 import {motion} from 'framer-motion/dist/framer-motion';
@@ -8,7 +8,7 @@ import {motion} from 'framer-motion/dist/framer-motion';
 
 
 type cardType = {
-    data: project
+    data: Project
     index: number
 }
 

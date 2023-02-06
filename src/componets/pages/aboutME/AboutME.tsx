@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react'
+import React from 'react'
 import styles from './aboutMe.module.scss'
 import commonStyles from '../../../styles/common.module.scss'
 import {Navbar} from '../../navbar/Navbar';
@@ -53,7 +53,7 @@ export const AboutME = () => {
                             </li>
                             <li className={styles.aboutMe__list}>
                                 Nationality:
-                                <span className={styles.aboutMe__list_light}>{state.user.lastName}</span>
+                                <span className={styles.aboutMe__list_light}>{state.user.nationality}</span>
                             </li>
                             <li className={styles.aboutMe__list}>
                                 Address:

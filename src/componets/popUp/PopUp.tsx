@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from './popUp.module.scss'
-import img from '../../icons/whybuildemaillist.png'
 import projectImg from '../../icons/icons8-page-32.png';
 import clientImg from '../../icons/icons8-user-24.png';
 import codeImg from '../../icons/icons8-code-32.png';
 import previewImg from '../../icons/icons8-preview-32.png';
 import {Title} from '../title/Title';
-import {project} from '../../models/models';
+import {Project} from '../../models/models';
+
 
 type popupType = {
     closePopup: () => void
-    data: project
+    data: Project
 }
 
 export const PopUp = React.memo(({closePopup, data}: popupType) => {

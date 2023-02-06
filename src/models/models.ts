@@ -13,7 +13,7 @@ export interface user {
     freelance: string;
     skills: Array<skills>;
     street: string
-    project: Array<project>
+    project: Array<Project>
     blog: Array<myBlog>
 }
 
@@ -22,12 +22,13 @@ export interface skills {
     skill: string;
 }
 
-export interface project {
+export interface Project {
     id: string;
     link: string;
     img: string;
     name: string;
-    language: string
+    language: string;
+    filter: FilterProject
 }
 
 export interface myBlog {
@@ -45,3 +46,5 @@ export interface DataNav {
     text: string
     path: string
 }
+
+export type FilterProject = 'high' | 'low'
