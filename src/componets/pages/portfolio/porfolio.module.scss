@@ -10,7 +10,6 @@
 
 .portfolio__lists {
   padding: 0;
-  color: #eee;
   list-style: none;
   outline: none;
   text-decoration: none;
@@ -19,6 +18,14 @@
 }
 
 .portfolio__list {
+
+}
+
+.portfolio__btn {
+  color: #eeeeee;
+  border: none !important;
+  outline: none !important;
+  background-color: #111111;
   margin: 0 15px 15px;
   transition: all .4s;
   font-size: 16px;
@@ -26,11 +33,11 @@
   line-height: 1.6;
 }
 
-.portfolio__list:first-child {
+.portfolio__list:first-child button {
   color: #ffb400;
 }
 
-.portfolio__list:hover {
+.portfolio__btn:hover {
   color: #ffb400;
   cursor: pointer;
 }
