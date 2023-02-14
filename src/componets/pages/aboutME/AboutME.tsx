@@ -11,6 +11,7 @@ import {Avatar} from '../../avatar/Avatar';
 import {motion} from 'framer-motion/dist/framer-motion';
 
 
+
 export const AboutME = () => {
     const state = useSelector((state: RootState) => state);
     const screenWidth = document.documentElement.scrollWidth;
@@ -28,6 +29,18 @@ export const AboutME = () => {
             opacity: 0
         }
     }
+    const skillsImgVariants = {
+        visible: (i: number) => ({
+            opacity: 1,
+            transition: {
+                delay: i * .5,
+            }
+        }),
+        hidden: {
+            opacity: 0
+        }
+    }
+
 
     return (
         <section className={styles.aboutMe}>
@@ -48,7 +61,7 @@ export const AboutME = () => {
                             custom={1}
                         >
                             <figure className={styles.aboutMe__foto}>
-                                <img src={state.user.avatar} alt="user icon" className={styles.aboutMe__img}/>
+                                {/*<img src={state.user.avatar} alt="user icon" className={styles.aboutMe__img}/>*/}
                                 <figcaption className={styles.aboutMe__name}>Aliaksei Yausiuk</figcaption>
                                 <figcaption className={styles.aboutMe__subtitle}>Web Developer</figcaption>
                             </figure>
@@ -115,6 +128,19 @@ export const AboutME = () => {
                             custom={1}
                         >
                             <h3 className={styles.aboutMe__skillsTitle}>Skills</h3>
+                            <div className={styles.aboutMe__skillsImages}>
+                                {state.user.skills.map((el: any,i:number) => {
+                                    return <motion.img
+                                        className={styles.aboutMe__skillsImage}
+                                        src={el.img}
+                                        alt={el.skills}
+                                        variants={skillsImgVariants}
+                                        custom={i}
+                                        initial='hidden'
+                                        animate='visible'
+                                    />
+                                })}
+                            </div>
                         </motion.div>
                         <motion.div
                             className={styles.aboutMe__education}
@@ -127,16 +153,33 @@ export const AboutME = () => {
                             <div className={styles.aboutMe__educationWrapper}>
                                 <h3 className={styles.aboutMe__educationTitle}>Education</h3>
                                 <ul className={styles.aboutMe__educationLists}>
-                                    <li className={styles.aboutMe__educationList}>It incubator</li>
-                                    <li className={styles.aboutMe__educationList}>BSUIR</li>
+                                    <li className={styles.aboutMe__educationDate}>2021-2022</li>
+                                    <li className={styles.aboutMe__educationList}>
+                                        It Incubator <br/>
+                                        <span className={styles.aboutMe__educationSubtitle}>Web-developer</span>
+                                    </li>
+                                    <li className={styles.aboutMe__educationDate}>2023-2027</li>
+                                    <li className={styles.aboutMe__educationList}>
+                                        BSUIR<br/>
+                                        <span className={styles.aboutMe__educationSubtitle}>Faculty of Information Security</span>
+                                    </li>
                                 </ul>
                             </div>
                             <div className={styles.aboutMe__educationWrapper}>
                                 <h3 className={styles.aboutMe__educationTitle}>Experience</h3>
                                 <ul className={styles.aboutMe__educationLists}>
+                                    <li className={styles.aboutMe__educationDate}>2021-2022</li>
                                     <li className={styles.aboutMe__educationList}>Todolist</li>
-                                    <li className={styles.aboutMe__educationList}>Mesto React</li>
-                                    <li className={styles.aboutMe__educationList}>Project</li>
+                                    <li className={styles.aboutMe__educationDate}>2020-2021</li>
+                                    <li className={styles.aboutMe__educationList}>
+                                        Mesto React <br/>
+                                        <span className={styles.aboutMe__educationSubtitle}>Create card</span>
+                                    </li>
+                                    <li className={styles.aboutMe__educationDate}>2023-now</li>
+                                    <li className={styles.aboutMe__educationList}>
+                                        Portfolio <br/>
+                                        <span className={styles.aboutMe__educationSubtitle}>My practice</span>
+                                    </li>
                                 </ul>
                             </div>
 
