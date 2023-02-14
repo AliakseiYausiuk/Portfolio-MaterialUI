@@ -16,6 +16,18 @@ import imgRoadMap from '../icons/roadmap.png';
 import imgHomeworkIncubator from '../icons/homework-inceubator.png'
 import imgIm from '../icons/IM.jpg'
 import imgForm from '../icons/form.png'
+import reactImg from '../icons/react.svg';
+import htmlImg from '../icons/html.jpg';
+import cssImg from '../icons/css.png';
+import jsImg from '../icons/js.png';
+import reduxImg from '../icons/redux_toolkit.png';
+import react_hook_formImg from '../icons/react_hook_form.png';
+import gitHubImg from '../icons/gitHub.png';
+import sassImg from '../icons/sass.png';
+import formikImg from '../icons/formik.png';
+import muiImg from '../icons/material-ui.png';
+import webpackImg from '../icons/webpack.jpg';
+import typeScriptImg from '../icons/typeScript.jpg';
 
 
 export const initialState: user = {
@@ -33,14 +45,18 @@ export const initialState: user = {
     freelance: 'available',
     street: '49/165 Rokossovsky Ave.',
     skills: [
-        {id: v1(), skill: 'html'},
-        {id: v1(), skill: 'javascript'},
-        {id: v1(), skill: 'css'},
-        {id: v1(), skill: 'react'},
-        {id: v1(), skill: 'github'},
-        {id: v1(), skill: 'material-ui'},
-        {id: v1(), skill: 'typescript'},
-        {id: v1(), skill: 'redux-toolkit'},
+        {id: v1(), skill: 'html', img: htmlImg,},
+        {id: v1(), skill: 'javascript', img: jsImg},
+        {id: v1(), skill: 'css', img: cssImg},
+        {id: v1(), skill: 'react', img: reactImg},
+        {id: v1(), skill: 'github', img: gitHubImg},
+        {id: v1(), skill: 'material-ui', img: muiImg},
+        {id: v1(), skill: 'typescript', img: typeScriptImg},
+        {id: v1(), skill: 'redux-toolkit', img: reduxImg},
+        {id: v1(), skill: 'react-hook-form', img: react_hook_formImg},
+        {id: v1(), skill: 'formik', img: formikImg},
+        {id: v1(), skill: 'webpack', img: webpackImg},
+        {id: v1(), skill: 'sass', img: sassImg},
     ],
     project: [
         {
