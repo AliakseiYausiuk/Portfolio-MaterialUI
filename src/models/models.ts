@@ -20,6 +20,7 @@ export interface user {
 export interface skills {
     id: string;
     skill: string;
+    img: string
 }
 
 export interface Project {
