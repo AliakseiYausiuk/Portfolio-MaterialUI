@@ -2,6 +2,7 @@
 
 .aboutMe {
   box-sizing: border-box;
+  height: 100vh;
 }
 
 .aboutMe__item {
@@ -12,7 +13,7 @@
 
 
 .aboutMe__infos {
-  width: 70%;
+  width: 80%;
 
   @media screen and (max-width: 1024px) {
     width: 85%;
@@ -24,13 +25,13 @@
 }
 
 .aboutMe__foto {
-  width: 847px;
   margin: 0;
+  object-fit: cover;
 }
 
 .aboutMe__img {
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 
 .aboutMe__name {
@@ -51,6 +52,7 @@
 
 .aboutMe__wrapper {
   background-color: hsla(0, 0%, 30%, .1);
+  box-sizing: border-box;
 }
 
 .aboutMe__text {
@@ -68,6 +70,7 @@
 .aboutMe__contact {
   list-style-type: none;
   padding: 30px 30px;
+  margin: 0;
 }
 
 .aboutMe__contactLists {
@@ -87,12 +90,68 @@
   color: #444444;
   outline: none;
   border: none;
-  cursor: pointer!important;
+  cursor: pointer !important;
   padding: 11px 40px;
   text-decoration: none;
   transition: all .3s ease;
-  background-color: #eeeeee;
-}
-.aboutMe__btn:hover {
   background-color: #ffb400;
+}
+
+.aboutMe__skills {
+  background-color: hsla(0, 0%, 30%, .1);
+  padding: 40px 0 40px 30px;
+}
+
+.aboutMe__skillsTitle {
+  margin: 0;
+}
+
+.aboutMe__education {
+  background-color: hsla(0, 0%, 30%, .1);
+  padding: 0 0 0 30px;
+}
+
+.aboutMe__educationWrapper {
+}
+
+.aboutMe__educationTitle {
+  margin: 0;
+}
+
+.aboutMe__educationLists {
+  list-style-type: none;
+  display: flex;
+  padding: 50px 0;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.aboutMe__educationDate {
+  width: 136px;
+  height: 40px;
+  background-color: #ffb400;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMe__educationSubtitle {
+  color: #444444;
+}
+
+.aboutMe__educationList {
+  margin: 0 30px;
+}
+.aboutMe__skillsImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutMe__skillsImage {
+  width: 90px;
+  height: 90px;
+  margin: 0 10px;
 }
