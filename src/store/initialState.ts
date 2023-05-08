@@ -28,6 +28,8 @@ import formikImg from '../icons/formik.png';
 import muiImg from '../icons/material-ui.png';
 import webpackImg from '../icons/webpack.jpg';
 import typeScriptImg from '../icons/typeScript.jpg';
+import shopImg from '../icons/shop.png';
+import coloursImg from '../icons/colours.png';
 
 
 export const initialState: user = {
@@ -114,6 +116,22 @@ export const initialState: user = {
             name: 'Form',
             language: 'React, TypeScript, Material-UI, React-hook-form',
             filter: 'low',
+        },
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/shop-project/',
+            img: shopImg,
+            name: 'Shop',
+            language: 'React, Javascript, Redux-toolkit, API, AXIOS, Await',
+            filter: 'low',
+        },
+        {
+            id: v1(),
+            link: 'https://aliakseiyausiuk.github.io/Coolours/',
+            img: coloursImg,
+            name: 'Colours',
+            language: 'HTML, CSS, Javascript, Chroma.js',
+            filter: 'high',
         },
     ],
     blog: [
