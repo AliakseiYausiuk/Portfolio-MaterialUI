@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-React/static/css/main.09b8c4a6.chunk.css",
-    "main.js": "/Portfolio-React/static/js/main.4ea91b2e.chunk.js",
-    "main.js.map": "/Portfolio-React/static/js/main.4ea91b2e.chunk.js.map",
+    "main.js": "/Portfolio-React/static/js/main.f80fad02.chunk.js",
+    "main.js.map": "/Portfolio-React/static/js/main.f80fad02.chunk.js.map",
     "runtime-main.js": "/Portfolio-React/static/js/runtime-main.1e02a68d.js",
     "runtime-main.js.map": "/Portfolio-React/static/js/runtime-main.1e02a68d.js.map",
     "static/js/2.c207614d.chunk.js": "/Portfolio-React/static/js/2.c207614d.chunk.js",
@@ -14,6 +14,7 @@
     "static/media/Screenshot_2.6ea0dbef.png": "/Portfolio-React/static/media/Screenshot_2.6ea0dbef.png",
     "static/media/Screenshot_3.ccb004ff.png": "/Portfolio-React/static/media/Screenshot_3.ccb004ff.png",
     "static/media/Screenshot_4.efcf0df3.png": "/Portfolio-React/static/media/Screenshot_4.efcf0df3.png",
+    "static/media/colours.21e36fcc.png": "/Portfolio-React/static/media/colours.21e36fcc.png",
     "static/media/css.58dfbeba.png": "/Portfolio-React/static/media/css.58dfbeba.png",
     "static/media/formik.8908f26c.png": "/Portfolio-React/static/media/formik.8908f26c.png",
     "static/media/githubSearch.414a813d.png": "/Portfolio-React/static/media/githubSearch.414a813d.png",
@@ -33,6 +34,7 @@
     "static/media/redux.63cbd8b0.jpg": "/Portfolio-React/static/media/redux.63cbd8b0.jpg",
     "static/media/roadmap.fc1b24ed.png": "/Portfolio-React/static/media/roadmap.fc1b24ed.png",
     "static/media/sass.6747d5c6.png": "/Portfolio-React/static/media/sass.6747d5c6.png",
+    "static/media/shop.7706a188.png": "/Portfolio-React/static/media/shop.7706a188.png",
     "static/media/typeScript.24382bf6.jpg": "/Portfolio-React/static/media/typeScript.24382bf6.jpg",
     "static/media/typescript.7c2e5f59.svg": "/Portfolio-React/static/media/typescript.7c2e5f59.svg",
     "static/media/webpack.6b2e3c5e.jpg": "/Portfolio-React/static/media/webpack.6b2e3c5e.jpg"
@@ -41,6 +43,6 @@
     "static/js/runtime-main.1e02a68d.js",
     "static/js/2.c207614d.chunk.js",
     "static/css/main.09b8c4a6.chunk.css",
-    "static/js/main.4ea91b2e.chunk.js"
+    "static/js/main.f80fad02.chunk.js"
   ]
 }
